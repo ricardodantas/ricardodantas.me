@@ -18,17 +18,19 @@ export default function Home() {
 				<title>Ricardo Dantas | Full Stack Developer</title>
 				<link rel="icon" href="/favicon.ico" />
 				<script
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=UA-124612577-1"
+				></script>
+				<script
 					dangerouslySetInnerHTML={{
 						__html: `
-						<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124612577-1"></script>
-						<script>
+
 							window.dataLayer = window.dataLayer || []; function gtag()
 							{dataLayer.push(arguments)}
 							gtag('js', new Date()); gtag('config', 'UA-124612577-1');
-						</script>
-						`,
+              `,
 					}}
-				></script>
+				/>
 			</Head>
 
 			<main className={styles.main}>
