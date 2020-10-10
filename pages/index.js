@@ -17,6 +17,18 @@ export default function Home() {
 			<Head>
 				<title>Ricardo Dantas | Full Stack Developer</title>
 				<link rel="icon" href="/favicon.ico" />
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+						<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124612577-1"></script>
+						<script>
+							window.dataLayer = window.dataLayer || []; function gtag()
+							{dataLayer.push(arguments)}
+							gtag('js', new Date()); gtag('config', 'UA-124612577-1');
+						</script>
+						`,
+					}}
+				></script>
 			</Head>
 
 			<main className={styles.main}>
