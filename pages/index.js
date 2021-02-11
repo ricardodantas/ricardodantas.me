@@ -11,7 +11,7 @@ export default function Home({ person }) {
 		<div className={styles.container}>
 			<Head>
 				<title>{person.name} | { person.jobTitle}</title>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href={person.photo.url} />
 				<script
 					async
 					src="https://www.googletagmanager.com/gtag/js?id=UA-124612577-1"
