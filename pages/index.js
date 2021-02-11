@@ -1,21 +1,16 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faTwitter,
-	faGithub,
-	faLinkedin,
-	faInstagram,
-	faMedium,
-	faGoodreads,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faRssSquare } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { getPerson } from '../libs/api';
+import { ReactSVG } from 'react-svg';
 
-export default function Home() {
+export default function Home({ person }) {
+	const allSocialMedias = person.socialMediaCollection?.items || [];
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Ricardo Dantas | Full Stack Developer</title>
+				<title>{person.name} | { person.jobTitle}</title>
 				<link rel="icon" href="/favicon.ico" />
 				<script
 					async
@@ -34,48 +29,27 @@ export default function Home() {
 			</Head>
 
 			<main className={styles.main}>
+
 				<img
 					className={styles.photo}
-					src={
-						"https://www.gravatar.com/avatar/742396bc8754671336d09ee4ac530f5a?s=280"
-					}
+					src={person.photo.url}
 				/>
-				<h1 className={styles.title}>Ricardo Dantas</h1>
 
-				<p className={styles.description}>Full Stack Developer</p>
+				<h1 className={styles.title}>{person.name}</h1>
+
+				<p className={styles.description}>{ person.jobTitle }</p>
 
 				<ul className={styles.socialMedia}>
+					{allSocialMedias.map(socialMedia => (
+						<li key={socialMedia.name}>
+							<a href={socialMedia.url} target="_blank">
+								<ReactSVG src={socialMedia.icon.url} className={styles.socialMediaIcon} wrapper={'span'}/>
+							</a>
+						</li>
+					))}
 					<li>
-						<a href={`https://www.linkedin.com/in/rdantas`} target="_blank">
-							<FontAwesomeIcon icon={faLinkedin} />
-						</a>
-					</li>
-					<li>
-						<a href={`https://github.com/ricardodantas`} target="_blank">
-							<FontAwesomeIcon icon={faGithub} />
-						</a>
-					</li>
-					<li>
-						<a href={`https://twitter.com/ricardodantas`} target="_blank">
-							<FontAwesomeIcon icon={faTwitter} />
-						</a>
-					</li>
-					<li>
-						<a href={`https://medium.com/@ricardodantas`} target="_blank">
-							<FontAwesomeIcon icon={faMedium} />
-						</a>
-					</li>
-					<li>
-						<a
-							href={`https://www.goodreads.com/user/show/77647522-ricardo-dantas`}
-							target="_blank"
-						>
-							<FontAwesomeIcon icon={faGoodreads} />
-						</a>
-					</li>
-					<li>
-						<a href={`mailto:ricardodantas@gmail.com`}>
-							<FontAwesomeIcon icon={faEnvelope} />
+						<a href={`mailto:${person.email}`}>
+							<FontAwesomeIcon icon={faEnvelope} className={ styles.emailIcon} />
 						</a>
 					</li>
 				</ul>
@@ -84,4 +58,12 @@ export default function Home() {
 			{/* <footer className={styles.footer}></footer> */}
 		</div>
 	);
+}
+
+
+export async function getStaticProps({ preview = false }) {
+	const person = await getPerson(preview);
+	return {
+		props: { preview, person },
+	};
 }
