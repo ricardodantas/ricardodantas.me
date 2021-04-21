@@ -11,7 +11,7 @@ export default function Home({ person }) {
 		<div className={styles.container}>
 			<Head>
 				<title>{person.name} | { person.jobTitle}</title>
-				<link rel="icon" href={person.photo.url} />
+				<link rel="icon" href={`${person.photo.url}?w=100&h=1000&q=90&fm=webp`} />
 				<script
 					async
 					src="https://www.googletagmanager.com/gtag/js?id=UA-124612577-1"
@@ -32,7 +32,7 @@ export default function Home({ person }) {
 
 				<img
 					className={styles.photo}
-					src={person.photo.url}
+					src={`${person.photo.url}?w=800&h=800&q=90&fm=webp`}
 				/>
 
 				<h1 className={styles.title}>{person.name}</h1>
