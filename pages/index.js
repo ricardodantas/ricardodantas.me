@@ -41,7 +41,7 @@ export default function Home({ person }) {
           <div className="flex flex-row items-center justify-center p-3">
             {allSocialMedias.map(socialMedia => (
               <div className="w-11 px-2 hover:opacity-50 transition duration-500" key={socialMedia.name}>
-                <a href={socialMedia.url} target="_blank">
+                <a href={socialMedia.url} target="_blank" title={socialMedia.name}>
                   <ReactSVG src={socialMedia.icon.url} className="fill-current"/>
                 </a>
               </div>
