@@ -11,19 +11,7 @@ export default function Home({ person }) {
       <Head>
         <title>{person.name} | { person.jobTitle}</title>
         <link rel="icon" href={`${person.photo.url}?w=100&h=1000&q=90&fm=webp`} />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-124612577-1"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || []; function gtag()
-              {dataLayer.push(arguments)}
-              gtag('js', new Date()); gtag('config', 'UA-124612577-1');
-              `,
-          }}
-        />
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
 
       <main className="bg-gray-100 dark:bg-gray-900 dark:text-gray-500 h-screen flex flex-col items-center justify-center overflow-hidden">
