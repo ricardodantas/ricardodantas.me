@@ -44,22 +44,6 @@ export default function Home({ person }) {
 
         </div>
 
-
-
-        <div className="bg-black dark:bg-purple-600 w-full dark:text-white py-10 mt-20">
-          <div className="container md:max-w-3xl px-5 md:px-0 md:mx-auto">
-            <div className="" id="revue-embed">
-              <h2 className="text-white text-center text-2xl mb-10">Subscribe to my newsletter</h2>
-              <form action="https://newsletter.ricardo.im/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">
-                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center items-center">
-                  <input className="border-2  border-white dark:text-purple-600 leading-relaxed bg-white rounded-md outline-none w-full py-2 px-3 text-xl revue-form-field" placeholder="Your email address..." type="email" required="required" name="member[email]" id="member_email" />
-                  <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit" className="cursor-pointer bg-white dark:text-purple-600 w-full md:w-auto py-2 leading-relaxed px-3 text-xl rounded-md" />
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
       </main>
     </>
   );
