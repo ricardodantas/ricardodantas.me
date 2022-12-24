@@ -18,23 +18,23 @@ export default function Home({ person }) {
 
         <div className="flex flex-col items-center justify-center">
 
-            <div className="w-60 h-60 rounded-full border-4 dark:border-purple-600 border-black shadow bg-cover bg-no-repeat" style={{backgroundImage: `url(${person.photo.url}?w=800&h=750&q=90&fm=webp)`}}></div>
+            <div className="w-60 h-60 rounded-full border-4 dark:border-emerald-400 border-black shadow bg-cover bg-no-repeat" style={{backgroundImage: `url(${person.photo.url}?w=800&h=750&q=90&fm=webp)`}}></div>
 
             <div className="mt-7">
-              <h1 className="text-center mb-1 font-semibold text-4xl dark:text-purple-600">{person.name}</h1>
+              <h1 className="text-center mb-1 font-semibold text-4xl dark:text-emerald-400">{person.name}</h1>
               <p className="text-xl text-center font-extralight	 dark:text-gray-500 mb-3">{ person.jobTitle }</p>
             </div>
 
 
             <div className="flex flex-row items-center justify-center p-3 ">
               {allSocialMedias.map(socialMedia => (
-                <div className="w-11 px-2 hover:text-purple-600 transition duration-500" key={socialMedia.name}>
+                <div className="w-11 px-2 hover:text-emerald-400 transition duration-500" key={socialMedia.name}>
                   <a href={socialMedia.url} target="_blank" title={socialMedia.name}>
                     <ReactSVG src={socialMedia.icon.url} className="fill-current"/>
                   </a>
                 </div>
               ))}
-              <div className="w-14 px-3 hover:text-purple-600 transition duration-500">
+              <div className="w-14 px-3 hover:text-emerald-400 transition duration-500">
                 <a href={`mailto:${person.email}`} >
                   <FontAwesomeIcon icon={faEnvelope} />
                 </a>
