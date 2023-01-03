@@ -16,17 +16,24 @@ export default function Home({ person }) {
 
       <main className="bg-gray-100 dark:bg-gray-900 dark:text-gray-500 h-screen flex flex-col items-center justify-center overflow-hidden">
 
+        <div className="py-3 text-center bg-emerald-400 w-full fixed top-0 text-black">🚀 Get curated content about web development, updates on what I am building and career advices. <a href="/newsletter" className="font-bold">Subscribe my newsletter!</a> </div>
+
         <div className="flex flex-col items-center justify-center">
 
             <div className="w-60 h-60 rounded-full border-4 dark:border-emerald-400 border-black shadow bg-cover bg-no-repeat" style={{backgroundImage: `url(${person.photo.url}?w=800&h=750&q=90&fm=webp)`}}></div>
 
             <div className="mt-7">
-              <h1 className="text-center mb-1 font-semibold text-4xl dark:text-emerald-400">{person.name}</h1>
-              <p className="text-xl text-center font-extralight	 dark:text-gray-500 mb-3">{ person.jobTitle }</p>
+              <h1 className="text-center mb-5 font-semibold text-4xl dark:text-emerald-400">{person.name}</h1>
+              <p className="text-xl text-center font-light dark:text-gray-500 mb-5">{ person.jobTitle }</p>
             </div>
 
 
-            <div className="flex flex-row items-center justify-center p-3 ">
+          <div className="flex flex-row items-center justify-center p-3 ">
+            <div className="w-14 px-3 hover:text-emerald-400 transition duration-500">
+                <a href={`mailto:${person.email}`} >
+                  <FontAwesomeIcon icon={faEnvelope} />
+                </a>
+              </div>
               {allSocialMedias.map(socialMedia => (
                 <div className="w-11 px-2 hover:text-emerald-400 transition duration-500" key={socialMedia.name}>
                   <a href={socialMedia.url} target="_blank" title={socialMedia.name}>
@@ -34,14 +41,7 @@ export default function Home({ person }) {
                   </a>
                 </div>
               ))}
-              <div className="w-14 px-3 hover:text-emerald-400 transition duration-500">
-                <a href={`mailto:${person.email}`} >
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </a>
-              </div>
             </div>
-
-
         </div>
 
       </main>
