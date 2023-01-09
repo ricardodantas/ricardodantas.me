@@ -29,6 +29,8 @@ export async function getPerson(preview) {
                         url
                     }
                     email
+                    bio
+                    keywords
                     socialMediaCollection {
                         items {
                             name

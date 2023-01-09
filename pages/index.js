@@ -1,18 +1,46 @@
-import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { getPerson } from '../libs/api';
 import { ReactSVG } from 'react-svg';
+import { NextSeo } from 'next-seo';
+import Script from 'next/script';
+
 
 export default function Home({ person }) {
   const allSocialMedias = person.socialMediaCollection?.items || [];
+  const { bio, keywords, jobTitle, name, photo, email} = person;
   return (
     <>
-      <Head>
-        <title>{person.name} | { person.jobTitle}</title>
-        <link rel="icon" href={`${person.photo.url}?w=100&h=1000&q=90&fm=webp`} />
-        <script async src="https://cdn.splitbee.io/sb.js"></script>
-      </Head>
+      <Script src="https://cdn.splitbee.io/sb.js" async />
+      <NextSeo
+        additionalLinkTags={[{
+            rel: 'icon',
+            href: `${photo.url}?w=100&h=1000&q=90&fm=webp`,
+          }
+        ]}
+        title={`${name} | ${jobTitle}` }
+        description={bio}
+        openGraph={{
+          type: 'website',
+          locale: 'en_US',
+          url: 'https://ricardo.im',
+          title: `${name} | ${jobTitle}`,
+          description: bio,
+          images: [
+            {
+              url: `${photo.url}?w=800&h=600&q=100&fm=webp`,
+              width: 800,
+              height: 600,
+              alt: name,
+            }
+          ],
+        }}
+        twitter={{
+          handle: '@ricardodantas',
+          site: '@ricardodantas',
+          cardType: 'summary_large_image',
+        }}
+      />
 
       <main className="bg-gray-100 dark:bg-gray-900 dark:text-gray-500 h-screen flex flex-col items-center justify-center overflow-hidden">
 
@@ -20,17 +48,17 @@ export default function Home({ person }) {
 
         <div className="flex flex-col items-center justify-center">
 
-            <div className="w-60 h-60 rounded-full border-4 dark:border-emerald-400 border-black shadow bg-cover bg-no-repeat" style={{backgroundImage: `url(${person.photo.url}?w=800&h=750&q=90&fm=webp)`}}></div>
+            <div className="w-60 h-60 rounded-full border-4 dark:border-emerald-400 border-black shadow bg-cover bg-no-repeat" style={{backgroundImage: `url(${photo.url}?w=800&h=750&q=90&fm=webp)`}}></div>
 
             <div className="mt-7">
-              <h1 className="text-center mb-5 font-semibold text-4xl dark:text-emerald-400">{person.name}</h1>
-              <p className="text-xl text-center font-light dark:text-gray-500 mb-5">{ person.jobTitle }</p>
+              <h1 className="text-center mb-5 font-semibold text-4xl dark:text-emerald-400">{name}</h1>
+              <p className="text-xl text-center font-light dark:text-gray-500 mb-5">{ jobTitle }</p>
             </div>
 
 
           <div className="flex flex-row items-center justify-center p-3 ">
             <div className="w-14 px-3 hover:text-emerald-400 transition duration-500">
-                <a href={`mailto:${person.email}`} >
+                <a href={`mailto:${email}`} >
                   <FontAwesomeIcon icon={faEnvelope} />
                 </a>
               </div>
