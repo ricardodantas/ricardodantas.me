@@ -44,7 +44,7 @@ export default function Home({ person }) {
 
       <main className="bg-gray-100 dark:bg-gray-900 dark:text-gray-500 h-screen flex flex-col items-center justify-center overflow-hidden">
 
-        <div className="py-3 text-center bg-emerald-400 w-full fixed top-0 text-black">🚀 Get curated content about web development, updates on what I am building and career advices. <a href="/newsletter" className="font-bold">Subscribe to my newsletter!</a> </div>
+        {/* <div className="py-3 text-center bg-emerald-400 w-full fixed top-0 text-black">🚀 Get curated content about web development, updates on what I am building and career advices. <a href="/newsletter" className="font-bold">Subscribe to my newsletter!</a> </div> */}
 
         <div className="flex flex-col items-center justify-center">
 
@@ -64,7 +64,7 @@ export default function Home({ person }) {
               </div>
               {allSocialMedias.map(socialMedia => (
                 <div className="w-11 px-2 hover:text-emerald-400 transition duration-500" key={socialMedia.name}>
-                  <a href={socialMedia.url} target="_blank" title={socialMedia.name}>
+                  <a href={socialMedia.url} rel="me" target="_blank" title={socialMedia.name}>
                     <ReactSVG src={socialMedia.icon.url} className="fill-current"/>
                   </a>
                 </div>
