@@ -23,7 +23,7 @@ export default function Home({ person }) {
         openGraph={{
           type: 'website',
           locale: 'en_US',
-          url: 'https://ricardo.im',
+          url: 'https://ricardodantas.me',
           title: `${name} | ${jobTitle}`,
           description: bio,
           images: [
