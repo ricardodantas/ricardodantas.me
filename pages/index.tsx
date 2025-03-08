@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faMastodon } from "@fortawesome/free-brands-svg-icons";
 import { getPerson } from '../libs/api';
 import { ReactSVG } from 'react-svg';
 import { NextSeo } from 'next-seo';
 import Script from 'next/script';
-import { faMastodon } from "@fortawesome/free-brands-svg-icons";
 
 
 export default function Home({ person }) {
