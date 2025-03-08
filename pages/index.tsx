@@ -4,6 +4,7 @@ import { getPerson } from '../libs/api';
 import { ReactSVG } from 'react-svg';
 import { NextSeo } from 'next-seo';
 import Script from 'next/script';
+import { faMastodon } from "@fortawesome/free-brands-svg-icons";
 
 
 export default function Home({ person }) {
@@ -13,10 +14,11 @@ export default function Home({ person }) {
     <>
       <Script src="https://cdn.splitbee.io/sb.js" async />
       <NextSeo
-        additionalLinkTags={[{
+        additionalLinkTags={[
+          {
             rel: 'icon',
             href: `${photo.url}?w=100&h=1000&q=90&fm=webp`,
-          }
+          },
         ]}
         title={`${name} | ${jobTitle}` }
         description={bio}
@@ -69,6 +71,9 @@ export default function Home({ person }) {
                   </a>
                 </div>
               ))}
+              <div className="w-11 px-2 hover:text-emerald-400 transition duration-500">
+                <a rel="me" href="https://mastodon.social/@ricardodantas" target="_blank" title="Mastodon"><FontAwesomeIcon icon={faMastodon} /></a>
+              </div>
             </div>
         </div>
 
