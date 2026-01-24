@@ -20,6 +20,4 @@ You can pick between these feeds:
 
 - [Music Production](https://ricardodantas.me/categories/music-production/feed.xml)
 
-- [Guitar related stuff](/categories/guitar/feed.xml)
-
 You can also follow me on [Micro.blog](https://micro.blog/ricardodantas), [Mastodon](https://mastodon.social/@ricardodantas), [BlueSky](https://bsky.app/profile/ricardodantas.me), or [X](https://x.com/ricardodantas).

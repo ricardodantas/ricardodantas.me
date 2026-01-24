@@ -23,6 +23,4 @@ If you want to support me and gain access to exclusive content about my music, v
 
 ## Blog posts
 
-- [Guitar](https://ricardodantas.me/categories/guitar)
-
 - [Music Production](https://ricardodantas.me/categories/music-production/)
