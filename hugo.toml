@@ -26,8 +26,7 @@ ShowToc = true
 ShowAllPagesInArchive = true
 ShowRssButtonInSectionTermList = true
 ShowPageNums = true
-
-# highlightStyle = 'monokai'
+highlightStyle = 'github'
 
 [languages.en]
 languageName = "English"
@@ -49,8 +48,8 @@ url = "search/"
 weight = 10
 
 [[languages.en.menu.main]]
-name = "Tags"
-url = "tags/"
+name = "Categories"
+url = "categories/"
 weight = 10
 
 # [[languages.en.menu.main]]
@@ -85,5 +84,20 @@ url = "https://x.com/ricardodantas"
 name = "email"
 url = "mailto:me@ricardodantas.me"
 
+[outputFormats.rss]
+baseName = 'feed'
+# isHTML = false
+# isPlainText = false
+# mediaType = 'application/rss+xml'
+# noUgly = true
+# notAlternative = false
+# path = ''
+# permalinkable = false
+# protocol = ''
+# rel = 'alternate'
+# root = false
+# ugly = false
+# weight = 0
+
 [outputs]
-home = ["HTML", "RSS", "JSON"] # necessary for search
+home = ["HTML", "RSS", "JSON"]
