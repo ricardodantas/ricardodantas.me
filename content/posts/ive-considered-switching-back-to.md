@@ -7,7 +7,6 @@ custom_summary: false
 summary: ""
 date: 2025-11-19T10:28:14+0100
 lastmod: 2025-11-19T10:32:28+0100
-type: post
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/11/19/ricardodantas.me/91dc80049ffb68c0c7ad641d809c7965.png
 opengraph:
   title: "Ricardo Dantas - I’ve been considering switching back to ..."

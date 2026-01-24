@@ -8,7 +8,6 @@ custom_summary: true
 summary: "After a break from social media, I am working independently on my first EP, featuring instrumental songs that tell stories, which has been a challenging but rewarding process."
 date: 2025-08-15T16:04:00+0100
 lastmod: 2025-08-16T07:00:48+0100
-type: post
 categories:
 - "Music Production"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/08/16/ricardodantas.me/3f9fa7a265d5995703cde7a61ffe8b84.png

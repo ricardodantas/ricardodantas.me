@@ -8,7 +8,6 @@ custom_summary: true
 summary: "Some movies that stand out in my journey."
 date: 2025-08-10T09:42:57+0100
 lastmod: 2025-08-16T07:00:37+0100
-type: post
 categories:
 - "Life"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/08/16/ricardodantas.me/c303e8d1b2337b5bcd0e07c50ec387f9.png
@@ -35,9 +34,8 @@ I have a deep love for these movies and have watched them many times.
 3. [Blade Runner](https://m.imdb.com/title/tt0083658/?ref_=ext_shr_lnk)
 4. [Saving Private Ryan](https://m.imdb.com/title/tt0120815/?ref_=chttp_t_24)
 5. [The Lord of the Rings: The Return Of The King](https://m.imdb.com/title/tt0167260/?ref_=chttp_t_6)
-6. [Interstellar](https://m.imdb.com/title/tt0816692/?ref_=chttp_t_18) 
+6. [Interstellar](https://m.imdb.com/title/tt0816692/?ref_=chttp_t_18)
 7. [Inception](https://m.imdb.com/title/tt1375666/?ref_=chttp_t_14)
 8. [Forrest Gump](https://m.imdb.com/title/tt0109830/?ref_=chttp_t_11)
 9. [The Green Mile](https://m.imdb.com/title/tt0120689/?ref_=chttp_t_25)
 10. [Untouchable](https://m.imdb.com/title/tt1675434)
-

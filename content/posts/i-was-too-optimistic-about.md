@@ -8,7 +8,6 @@ custom_summary: true
 summary: "Safari was initially promising but became unreliable with frequent crashes, prompting a switch back to Arc for better performance."
 date: 2025-08-15T11:02:51+0100
 lastmod: 2025-08-16T07:00:54+0100
-type: post
 categories:
 - "Tech"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/08/16/ricardodantas.me/2a81daa550dbeef1d2f460f92a7cc863.png

@@ -8,7 +8,6 @@ custom_summary: false
 summary: ""
 date: 2025-07-14T12:48:52+0100
 lastmod: 2025-09-04T15:32:03+0100
-type: post
 categories:
 - "Life"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/07/18/ricardodantas.me/cf3cfb727d9aa55911dd0d4fdfb1323d.png

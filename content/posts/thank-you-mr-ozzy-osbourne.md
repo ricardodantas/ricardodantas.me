@@ -8,7 +8,6 @@ custom_summary: true
 summary: "The Heavy Metal community mourns the loss of legendary musician Ozzy Osbourne, whose influence on the genre will be long remembered."
 date: 2025-07-22T20:07:34+0100
 lastmod: 2025-07-30T20:14:32+0100
-type: post
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/07/30/ricardodantas.me/12340f2ee47b4f7a7bdda3884d7fa591.png
 opengraph:
   title: "Ricardo Dantas - Thank you Mr. Ozzy Osbourne"

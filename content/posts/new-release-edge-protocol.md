@@ -8,7 +8,6 @@ custom_summary: true
 summary: "The first album \"Edge Protocol,\" a cinematic cyberpunk EP exploring a dystopian world of rogue AIs and conflict, is now available on all streaming platforms."
 date: 2025-10-15T19:07:26+0100
 lastmod: 2026-01-23T22:58:26+0100
-type: post
 categories:
 - "Music Production"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2026/01/23/ricardodantas.me/2c86800ce76b97e66efdac22e9d887b3.png
@@ -51,6 +50,5 @@ It is available on all streaming platforms:
 - [Deezer](https://www.deezer.com/album/831594791)
 
 And many more [here](https://ffm.to/prln8ex).
-
 
 <img src="uploads/2025/edge-protocol-cover-art-1400x1400.jpg" width="600" height="600" alt="">

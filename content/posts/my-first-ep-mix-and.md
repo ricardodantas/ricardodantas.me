@@ -8,7 +8,6 @@ custom_summary: true
 summary: "The mixing and mastering of the single and EP are complete, with the release set for the coming weeks after an intense and educational process."
 date: 2025-09-04T15:40:00+0100
 lastmod: 2025-09-17T11:08:11+0100
-type: post
 categories:
 - "Music Production"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/09/17/ricardodantas.me/a78b24af74f655d05d16a0cac38f75b3.png

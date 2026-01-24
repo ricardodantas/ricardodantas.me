@@ -8,7 +8,6 @@ custom_summary: true
 summary: "A journey from discovering Linux to embracing the Apple ecosystem highlights a focus on convenience, integration, and reducing reliance on Google services while optimizing workflows."
 date: 2025-07-15T09:39:44+0100
 lastmod: 2025-09-04T15:32:57+0100
-type: post
 categories:
 - "Tech"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/07/18/ricardodantas.me/b616a59edba259d507790491fefe361a.png
@@ -19,13 +18,13 @@ url: "/2025/07/15/leaning-into-the-apple-ecosystem/"
 ---
 I began my journey with computers in 1996, using MS Windows. In 1999, I discovered the incredible world of Open Source and Linux, which was mind-blowing.
 
-In 2006, after a trip to the 🇳🇱 Netherlands, I met a guy using a MacBook. I approached him and asked about the computer, and he enthusiastically discussed it. He mentioned that there was an Apple store nearby, which had a wide variety of products on sale. Excited by the opportunity, I decided to buy my very first Apple device—a white MacBook. I had never used macOS before, so I spent the day familiarizing myself with it and customizing the settings to suit my preferences. It was a rewarding experience, and since then, I have exclusively used MacBooks. 
+In 2006, after a trip to the 🇳🇱 Netherlands, I met a guy using a MacBook. I approached him and asked about the computer, and he enthusiastically discussed it. He mentioned that there was an Apple store nearby, which had a wide variety of products on sale. Excited by the opportunity, I decided to buy my very first Apple device—a white MacBook. I had never used macOS before, so I spent the day familiarizing myself with it and customizing the settings to suit my preferences. It was a rewarding experience, and since then, I have exclusively used MacBooks.
 
-The macOS has been a key part of my workflow. For my use case, it is the best Operating System, especially with all the improvements and integration with iPhones and iPads in the last decade. 
+The macOS has been a key part of my workflow. For my use case, it is the best Operating System, especially with all the improvements and integration with iPhones and iPads in the last decade.
 
 I have always been concerned about being locked into a single ecosystem, which feels unsettling. Naturally, I have had those thoughts:
 
-> "What if I decide to switch to a different ecosystem someday?" 
+> "What if I decide to switch to a different ecosystem someday?"
 
 > "Some apps and workflows that are designed exclusively for Apple devices may have difficulty adjusting to new environments."
 
@@ -72,4 +71,3 @@ At the end of the day, it’s not about brand loyalty, it’s about using the to
 I know this setup isn’t perfect, and it might evolve over time. But right now, the Apple ecosystem gives me the balance of performance, simplicity, and integration that I need without constant maintenance or second-guessing.
 
 I’ll keep exploring, refining, and adjusting along the way. If it helps bring a bit more peace and flow into my digital life, then it’s a path worth continuing.
-

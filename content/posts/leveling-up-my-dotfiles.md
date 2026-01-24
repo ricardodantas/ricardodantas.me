@@ -8,7 +8,6 @@ custom_summary: true
 summary: "I’ve come across some truly helpful tools that have made a big difference in how I manage my dotfiles. They not only enhance automation but also boost security, making the setup process feel much more efficient and safe. "
 date: 2026-01-23T23:54:21+0100
 lastmod: 2026-01-24T02:13:00+0100
-type: post
 categories:
 - "Dev"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2026/01/24/ricardodantas.me/1e924b547001432c82168279f0efcd80.png

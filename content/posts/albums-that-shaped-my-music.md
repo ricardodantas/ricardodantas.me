@@ -8,7 +8,6 @@ custom_summary: true
 summary: "These were the albums that shaped my musical taste during my teenage and early adult years."
 date: 2025-08-16T07:00:00+0100
 lastmod: 2025-08-16T07:00:35+0100
-type: post
 categories:
 - "Life"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/08/16/ricardodantas.me/0d0affd9c2fa11137c6170672e00e321.png
@@ -34,7 +33,7 @@ The albums that profoundly influenced my musical taste during my teenage and ear
 2. Iron Maiden - Best Of the Beast
 3. Black Sabbath - Paranoid
 4. Metallica - Black Album
-5. Megadeth - Rust in Peace 
+5. Megadeth - Rust in Peace
 6. Van Halen - Van Halen
 7. Angra - Rebirth
 8. Unearth - The Oncoming Storm
