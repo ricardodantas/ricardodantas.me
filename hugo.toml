@@ -1,0 +1,49 @@
+baseURL = 'https://ricardodantas.me/'
+languageCode = 'en-us'
+title = 'Ricardo Dantas'
+theme = 'PaperMod'
+enableInlineShortcodes = true
+enableRobotsTXT = true
+
+[params]
+defaultTheme = 'auto'
+author = 'Ricardo Dantas'
+description = "Software developer. Guitar player. Music maker. Dad. Writing about tech, life, music and whatever else I'm thinking about."
+showReadingTime = true
+defaultContentLanguage = 'en'
+ShowShareButtons = true
+dateFormat = 'January 2, 2006'
+ShowBreadCrumbs = false
+ShowPostNavLinks = true
+# highlightStyle = 'monokai'
+
+[params.homeInfoParams]
+title = "Hi there! I'm Ricardo Dantas."
+content = "Software developer. Guitar player. Music maker. Dad. Writing about tech, life, music and whatever else I'm thinking about."
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/rdantas"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/ricardodantas"
+
+[[params.socialIcons]]
+name = "mastodon"
+url = "https://mastodon.social/@ricardodantas"
+
+[[params.socialIcons]]
+name = "bluesky"
+url = "https://bsky.app/profile/ricardodantas.me"
+
+[[params.socialIcons]]
+name = "x"
+url = "https://x.com/ricardodantas"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:me@ricardodantas.me"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"] # necessary for search
