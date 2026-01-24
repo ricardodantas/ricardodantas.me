@@ -2,6 +2,7 @@
 date = '2025-07-14T12:48:32+01:00'
 draft = false
 title = 'Starting Without a Plan'
+tags = ['life']
 +++
 
 I’ve been thinking about starting a blog for a little while now. It’s not about having an audience or building a personal brand. I just want to slow down and share what’s on my mind.

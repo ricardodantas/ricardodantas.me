@@ -4,8 +4,14 @@ title = 'Ricardo Dantas'
 theme = 'PaperMod'
 enableInlineShortcodes = true
 enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
 
 [params]
+env='production'
 defaultTheme = 'auto'
 author = 'Ricardo Dantas'
 description = "Software developer. Guitar player. Music maker. Dad. Writing about tech, life, music and whatever else I'm thinking about."
@@ -15,7 +21,41 @@ ShowShareButtons = true
 dateFormat = 'January 2, 2006'
 ShowBreadCrumbs = false
 ShowPostNavLinks = true
+ShowCodeCopyButtons = true
+ShowToc = true
+ShowAllPagesInArchive = true
+ShowRssButtonInSectionTermList = true
+ShowPageNums = true
+
 # highlightStyle = 'monokai'
+
+[languages.en]
+languageName = "English"
+weight = 1
+
+[languages.en.taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[[languages.en.menu.main]]
+name = "Archive"
+url = "archives"
+weight = 5
+
+[[languages.en.menu.main]]
+name = "Search"
+url = "search/"
+weight = 10
+
+[[languages.en.menu.main]]
+name = "Tags"
+url = "tags/"
+weight = 10
+
+# [[languages.en.menu.main]]
+# name = "WiKi"
+# url = "https://github.com/adityatelange/hugo-PaperMod/wiki/"
 
 [params.homeInfoParams]
 title = "Hi there! I'm Ricardo Dantas."
