@@ -14,7 +14,7 @@ enableEmoji = true
 env='production'
 defaultTheme = 'auto'
 author = 'Ricardo Dantas'
-description = "Software developer. Guitar player. Music maker. Dad. Writing about tech, life, music and whatever else I'm thinking about."
+description = "Software developer. Guitar player. Music maker. Writing about tech, life, music and whatever else I'm thinking about."
 showReadingTime = true
 defaultContentLanguage = 'en'
 ShowShareButtons = true
@@ -58,7 +58,7 @@ weight = 10
 
 [params.homeInfoParams]
 title = "Hi there! I'm Ricardo Dantas."
-content = "Software developer. Guitar player. Music maker. Dad. Writing about tech, life, music and whatever else I'm thinking about."
+content = "Software developer. Guitar player. Music maker. Writing about tech, life, music and whatever else I'm thinking about."
 
 [[params.socialIcons]]
 name = "linkedin"
