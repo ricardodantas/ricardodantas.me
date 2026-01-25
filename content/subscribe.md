@@ -18,6 +18,6 @@ You can pick between these feeds:
 
 - [Life posts](/categories/life/feed.xml)
 
-- [Music Production](https://ricardodantas.me/categories/music-production/feed.xml)
+- [Music Production](/categories/music-production/feed.xml)
 
-You can also follow me on [Micro.blog](https://micro.blog/ricardodantas), [Mastodon](https://mastodon.social/@ricardodantas), [BlueSky](https://bsky.app/profile/ricardodantas.me), or [X](https://x.com/ricardodantas).
+You can also follow me on [Mastodon](https://mastodon.social/@ricardodantas) or [BlueSky](https://bsky.app/profile/ricardodantas.me).
