@@ -15,7 +15,7 @@ I have two main passions: music and technology. I love playing guitar. I also wr
 
 I don’t follow a strict posting schedule; instead, I prefer to share my thoughts and creations whenever the mood strikes me and the moment feels right. I embrace spontaneity and authenticity in my sharing.
 
-Follow me on [Mastodon](https://mastodon.social/@ricardodantas) or [BlueSky](https://bsky.app/profile/ricardodantas.me).
+Follow me on [Micro.blog](https://micro.blog/ricardodantas), [Mastodon](https://mastodon.social/@ricardodantas), [BlueSky](https://bsky.app/profile/ricardodantas.me) or [X](https://x.com/ricardodantas).
 
 ### 🎸 Music Life
 
@@ -28,3 +28,5 @@ Whenever I get the chance, I like to share some of my open-source projects on [m
 ### 💼 Work
 
 Check out my career journey on [LinkedIn](https://www.linkedin.com/in/rdantas).
+
+*If you like my blog posts, consider supporting me on [Buy Me a Coffe](https://buymeacoffee.com/ricardodantas).*
