@@ -66,7 +66,7 @@ This month of intense Rust development taught me more than I expected:
 
 ## What's Next?
 
-Both projects are open source and available on GitHub. I'm planning to publish them on crates.io and set up Homebrew formulas for easier installation.
+Both projects are open source and available on GitHub. I've already published them on [crates.io](https://crates.io/) and set up Homebrew formulas, so you can install them with a simple `brew install ricardodantas/tap/feedo` or `brew install ricardodantas/tap/hazelnut`.
 
 There's still plenty to improve—better documentation, more features, and refinements based on real-world usage. But for now, I'm happy to have shipped two actual tools that I use daily.
 
