@@ -4,7 +4,7 @@ title: "Building TUI Apps with Rust: Feedo and Hazelnut"
 microblog: false
 custom_summary: true
 summary: "With some unexpected free time, I dove into Rust development and built two terminal-based applications. Here's the story behind Feedo and Hazelnut."
-date: 2026-02-04T18:00:00+0100
+date: 2026-02-04T17:00:00+0100
 categories:
 - "Dev"
 ---
