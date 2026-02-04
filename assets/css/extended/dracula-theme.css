@@ -250,6 +250,7 @@
 
 .project-links a.primary-link:hover {
     background: var(--dracula-pink);
+    color: #282a36;
 }
 
 .project-links a.secondary-link {
@@ -264,6 +265,17 @@
 
 .project-links a.secondary-link:hover {
     background: var(--dracula-comment);
+    color: var(--dracula-foreground);
+}
+
+:root[data-theme="dark"] .project-links a.primary-link:hover {
+    background: var(--dracula-pink);
+    color: #282a36;
+}
+
+:root[data-theme="dark"] .project-links a.secondary-link:hover {
+    background: var(--dracula-cyan);
+    color: #282a36;
 }
 
 .project-links svg {
