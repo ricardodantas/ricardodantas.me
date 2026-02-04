@@ -1,0 +1,306 @@
+/* Dracula Theme for PaperMod */
+
+:root {
+    /* Dracula Colors */
+    --dracula-bg: #282a36;
+    --dracula-current-line: #44475a;
+    --dracula-foreground: #f8f8f2;
+    --dracula-comment: #6272a4;
+    --dracula-cyan: #8be9fd;
+    --dracula-green: #50fa7b;
+    --dracula-orange: #ffb86c;
+    --dracula-pink: #ff79c6;
+    --dracula-purple: #bd93f9;
+    --dracula-red: #ff5555;
+    --dracula-yellow: #f1fa8c;
+    
+    /* Light theme - use Dracula-inspired lighter palette */
+    --theme: #f8f8f2;
+    --entry: #ffffff;
+    --primary: #282a36;
+    --secondary: #6272a4;
+    --tertiary: #e2e4e8;
+    --content: #282a36;
+    --code-block-bg: #282a36;
+    --code-bg: #f4f5f7;
+    --border: #e2e4e8;
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    --theme: var(--dracula-bg);
+    --entry: var(--dracula-current-line);
+    --primary: var(--dracula-foreground);
+    --secondary: var(--dracula-comment);
+    --tertiary: #44475a;
+    --content: var(--dracula-foreground);
+    --code-block-bg: #1e1f29;
+    --code-bg: var(--dracula-current-line);
+    --border: var(--dracula-comment);
+    color-scheme: dark;
+}
+
+/* Links */
+:root[data-theme="dark"] a {
+    color: var(--dracula-cyan);
+}
+
+:root[data-theme="dark"] a:hover {
+    color: var(--dracula-pink);
+}
+
+/* Menu & Navigation */
+:root[data-theme="dark"] .nav a {
+    color: var(--dracula-foreground);
+}
+
+:root[data-theme="dark"] .nav a:hover {
+    color: var(--dracula-cyan);
+}
+
+/* Post titles */
+:root[data-theme="dark"] .post-entry .entry-header h2 {
+    color: var(--dracula-foreground);
+}
+
+:root[data-theme="dark"] .post-entry:hover .entry-header h2 {
+    color: var(--dracula-pink);
+}
+
+/* Code blocks */
+:root[data-theme="dark"] code {
+    background: var(--dracula-current-line);
+    color: var(--dracula-green);
+}
+
+:root[data-theme="dark"] pre code {
+    color: var(--dracula-foreground);
+}
+
+/* Syntax highlighting hints */
+:root[data-theme="dark"] .highlight .c,
+:root[data-theme="dark"] .highlight .cm,
+:root[data-theme="dark"] .highlight .c1 {
+    color: var(--dracula-comment);
+}
+
+:root[data-theme="dark"] .highlight .s,
+:root[data-theme="dark"] .highlight .s1,
+:root[data-theme="dark"] .highlight .s2 {
+    color: var(--dracula-yellow);
+}
+
+:root[data-theme="dark"] .highlight .k,
+:root[data-theme="dark"] .highlight .kd,
+:root[data-theme="dark"] .highlight .kn {
+    color: var(--dracula-pink);
+}
+
+:root[data-theme="dark"] .highlight .nf,
+:root[data-theme="dark"] .highlight .nc {
+    color: var(--dracula-green);
+}
+
+:root[data-theme="dark"] .highlight .n,
+:root[data-theme="dark"] .highlight .na {
+    color: var(--dracula-cyan);
+}
+
+/* Tags */
+:root[data-theme="dark"] .post-tags a {
+    background: var(--dracula-current-line);
+    color: var(--dracula-cyan);
+}
+
+:root[data-theme="dark"] .post-tags a:hover {
+    background: var(--dracula-purple);
+    color: var(--dracula-foreground);
+}
+
+/* Social icons */
+:root[data-theme="dark"] .social-icons a {
+    color: var(--dracula-foreground);
+}
+
+:root[data-theme="dark"] .social-icons a:hover {
+    color: var(--dracula-cyan);
+}
+
+/* Scrollbar */
+:root[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: var(--dracula-purple);
+}
+
+:root[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: var(--dracula-pink);
+}
+
+/* Selection */
+:root[data-theme="dark"] ::selection {
+    background: var(--dracula-purple);
+    color: var(--dracula-foreground);
+}
+
+/* Theme toggle button */
+:root[data-theme="dark"] #theme-toggle {
+    color: var(--dracula-yellow);
+}
+
+/* Projects Section Styles */
+.projects-section {
+    margin: 2.5rem 0 3rem 0;
+    padding: 0;
+}
+
+.projects-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.projects-section h2::before {
+    content: "🚀";
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--dracula-purple), var(--dracula-pink), var(--dracula-cyan));
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+:root[data-theme="dark"] .project-card:hover {
+    box-shadow: 0 8px 25px rgba(189, 147, 249, 0.15);
+    border-color: var(--dracula-purple);
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    margin: 0 0 0.75rem 0;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-card h3 .icon {
+    font-size: 1.4rem;
+}
+
+:root[data-theme="dark"] .project-card h3 {
+    color: var(--dracula-green);
+}
+
+.project-card p {
+    color: var(--secondary);
+    margin: 0 0 1.25rem 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.project-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.project-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.project-links a.primary-link {
+    background: var(--dracula-purple);
+    color: var(--dracula-foreground);
+}
+
+.project-links a.primary-link:hover {
+    background: var(--dracula-pink);
+}
+
+.project-links a.secondary-link {
+    background: var(--tertiary);
+    color: var(--primary);
+}
+
+:root[data-theme="dark"] .project-links a.secondary-link {
+    background: var(--dracula-current-line);
+    color: var(--dracula-foreground);
+}
+
+.project-links a.secondary-link:hover {
+    background: var(--dracula-comment);
+}
+
+.project-links svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Tech badge */
+.tech-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.25rem 0.6rem;
+    background: var(--code-bg);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
+}
+
+:root[data-theme="dark"] .tech-badge {
+    background: var(--dracula-current-line);
+    color: var(--dracula-orange);
+}
+
+.tech-badge svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        padding: 1.25rem;
+    }
+}
