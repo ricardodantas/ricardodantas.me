@@ -13,7 +13,7 @@
     --dracula-purple: #bd93f9;
     --dracula-red: #ff5555;
     --dracula-yellow: #f1fa8c;
-    
+
     /* Light theme - use Dracula-inspired lighter palette */
     --theme: #f8f8f2;
     --entry: #ffffff;
@@ -147,12 +147,12 @@
 }
 
 /* Projects Section Styles */
-.projects-section {
+.projects-section{
     margin: 2.5rem 0 3rem 0;
     padding: 0;
 }
 
-.projects-section h2 {
+.projects-section h2, .blog-section h2 {
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
     color: var(--primary);
@@ -311,7 +311,7 @@
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .project-card {
         padding: 1.25rem;
     }
