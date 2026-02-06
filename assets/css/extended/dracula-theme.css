@@ -14,6 +14,9 @@
     --dracula-red: #ff5555;
     --dracula-yellow: #f1fa8c;
 
+    /* Match main content width to header width */
+    --main-width: 1024px;
+
     /* Light theme - use Dracula-inspired lighter palette */
     --theme: #f8f8f2;
     --entry: #ffffff;
