@@ -233,6 +233,17 @@
     opacity: 0.85;
 }
 
+/* Blog post entries - improve readability in dark mode */
+:root[data-theme="dark"] .post-entry .entry-content {
+    color: var(--dracula-foreground);
+    opacity: 0.85;
+}
+
+:root[data-theme="dark"] .post-entry .entry-footer {
+    color: var(--dracula-foreground);
+    opacity: 0.7;
+}
+
 .project-links {
     display: flex;
     gap: 0.75rem;
