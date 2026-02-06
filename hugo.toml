@@ -38,6 +38,11 @@ tag = "tags"
 series = "series"
 
 [[languages.en.menu.main]]
+name = "Projects"
+url = "projects/"
+weight = 3
+
+[[languages.en.menu.main]]
 name = "Archive"
 url = "archives"
 weight = 5
