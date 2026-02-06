@@ -228,6 +228,11 @@
     line-height: 1.6;
 }
 
+:root[data-theme="dark"] .project-card p {
+    color: var(--dracula-foreground);
+    opacity: 0.85;
+}
+
 .project-links {
     display: flex;
     gap: 0.75rem;
