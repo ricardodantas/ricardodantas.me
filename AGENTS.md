@@ -1,89 +1,86 @@
 # AGENTS.md - ricardodantas.me
 
-Personal website and blog for Ricardo Dantas.
+Personal website and blog built with Hugo and PaperMod theme.
 
-## Project Overview
+## Tech Stack
 
-- **Type:** Static site (Hugo)
-- **Theme:** PaperMod with Dracula customizations
-- **Hosting:** GitHub Pages via GitHub Actions
-- **URL:** https://ricardodantas.me
+- **Framework:** Hugo (static site generator)
+- **Theme:** PaperMod (customized with Dracula theme)
+- **Hosting:** GitHub Pages
+- **Domain:** ricardodantas.me
 
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `hugo.toml` | Site configuration (title, menus, params) |
-| `assets/css/extended/dracula-theme.css` | Custom Dracula color theme |
-| `layouts/partials/home_info.html` | Homepage intro override |
-| `layouts/partials/projects.html` | Featured projects section |
-| `content/posts/` | Blog posts (Markdown) |
-| `.github/workflows/hugo.yml` | CI/CD deployment |
-
-## Customization Approach
-
-PaperMod supports extending without modifying the theme directly:
-
-- **CSS:** Add files to `assets/css/extended/` (auto-loaded)
-- **Templates:** Override partials in `layouts/partials/`
-- **Config:** Everything in `hugo.toml`
-
-Never edit files inside `themes/PaperMod/` — they're from a submodule.
-
-## Theme Colors (Dracula)
+## Structure
 
 ```
-Background:    #282a36
-Current Line:  #44475a
-Foreground:    #f8f8f2
-Comment:       #6272a4
-Cyan:          #8be9fd
-Green:         #50fa7b
-Orange:        #ffb86c
-Pink:          #ff79c6
-Purple:        #bd93f9
-Red:           #ff5555
-Yellow:        #f1fa8c
+ricardodantas.me/
+├── content/
+│   ├── posts/           # Blog posts
+│   ├── about.md         # About page
+│   ├── projects.md      # Projects page
+│   ├── darkfrets.md     # Music page
+│   ├── archives.md      # Archive page
+│   ├── search.md        # Search page
+│   └── subscribe.md     # Subscribe page
+├── layouts/
+│   └── partials/
+│       └── projects.html  # Homepage projects section
+├── assets/
+│   └── css/
+│       └── extended/
+│           └── dracula-theme.css  # Custom theme styles
+├── static/
+│   ├── llms.txt         # AI agent info
+│   └── robots.txt       # Crawler rules
+├── themes/
+│   └── PaperMod/        # Hugo theme
+└── hugo.toml            # Site configuration
 ```
 
-## Common Tasks
+## Development
 
-### Add a new blog post
 ```bash
-hugo new posts/my-post-title.md
-```
-
-### Add a new project to homepage
-Edit `layouts/partials/projects.html` and add a new `.project-card` div.
-
-### Update theme colors
-Edit `assets/css/extended/dracula-theme.css`
-
-### Preview locally
-```bash
+# Run local dev server
 hugo server -D
+
+# Build for production
+hugo --minify
+
+# Create new post
+hugo new posts/my-post.md
 ```
 
-### Build production
-```bash
-hugo --gc --minify
-```
+## Configuration
+
+Main config in `hugo.toml`:
+- Site metadata
+- Menu structure
+- Social icons
+- Theme settings
+
+Custom styles in `assets/css/extended/dracula-theme.css`:
+- Dracula color scheme
+- Project cards styling
+- Dark mode improvements
+
+## Content
+
+### Blog Posts
+Located in `content/posts/`. Front matter includes:
+- title, date, tags, categories
+- Optional: cover image, summary, draft status
+
+### Pages
+Static pages in `content/`:
+- About, Projects, DarkFrets (music)
+- Archives, Search (auto-generated)
 
 ## Deployment
 
-Automatic on push to `main`. GitHub Actions builds and deploys to GitHub Pages.
+Automatic via GitHub Actions on push to main branch.
+Deploys to GitHub Pages at ricardodantas.me.
 
-Check deployment status: https://github.com/ricardodantas/ricardodantas.me/actions
+## Owner
 
-## Content Guidelines
-
-- Posts are in `content/posts/` as Markdown
-- Use front matter for title, date, tags, categories
-- Images go in `static/images/` and reference as `/images/filename.png`
-- Draft posts use `draft: true` in front matter
-
-## Dependencies
-
-- Hugo Extended v0.154+
-- PaperMod theme (git submodule)
-- Dart Sass (for CI build)
+Ricardo Dantas
+- GitHub: ricardodantas
+- Email: me@ricardodantas.me

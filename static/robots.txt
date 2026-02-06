@@ -1,0 +1,11 @@
+# https://ricardodantas.me/robots.txt
+# Personal website and blog of Ricardo Dantas
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ricardodantas.me/sitemap.xml
+
+# AI/LLM agents
+# For AI-friendly content, see /llms.txt

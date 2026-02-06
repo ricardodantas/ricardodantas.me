@@ -1,0 +1,68 @@
+# Ricardo Dantas
+
+> Software developer, guitar player, music maker
+
+Personal website and blog of Ricardo Dantas, a software developer based in Stockholm, Sweden.
+
+## About
+
+Ricardo is a dad, software developer, and musician who writes about technology, life, music, and various topics. He creates open-source terminal tools built with Rust.
+
+## Projects
+
+### Terminal Tools (Rust)
+
+**Feedo** - TUI RSS/Atom feed reader
+- Website: https://feedo.ricardodantas.me
+- GitHub: https://github.com/ricardodantas/feedo
+- Install: `brew install ricardodantas/tap/feedo`
+
+**Hazelnut** - Automated file organizer (inspired by Hazel)
+- Website: https://hazelnut.ricardodantas.me
+- GitHub: https://github.com/ricardodantas/hazelnut
+- Install: `brew install ricardodantas/tap/hazelnut`
+
+**Tickit** - Terminal task manager with CLI and TUI
+- Website: https://tickit.ricardodantas.me
+- GitHub: https://github.com/ricardodantas/tickit
+- Install: `brew install ricardodantas/tap/tickit`
+
+### Libraries
+
+**ratatui-themes** - Color themes for Ratatui TUI apps
+- GitHub: https://github.com/ricardodantas/ratatui-themes
+- Crates.io: https://crates.io/crates/ratatui-themes
+
+### Music
+
+**DarkFrets** - Guitar covers and original compositions
+- Social: https://ricardodantas.me/darkfrets
+
+## Blog Topics
+
+- Technology and software development
+- Rust programming
+- Terminal tools and TUI applications
+- Music and guitar
+- Life in Stockholm
+
+## Links
+
+- Website: https://ricardodantas.me
+- GitHub: https://github.com/ricardodantas
+- LinkedIn: https://linkedin.com/in/rdantas
+- Mastodon: https://mastodon.social/@ricardodantas
+- BlueSky: https://bsky.app/profile/ricardodantas.me
+- X/Twitter: https://x.com/ricardodantas
+- Email: me@ricardodantas.me
+
+## Contact
+
+For collaborations, questions, or just to say hi:
+- Email: me@ricardodantas.me
+- Social media links above
+
+## Support
+
+If you enjoy the content or projects:
+- Buy Me a Coffee: https://buymeacoffee.com/ricardodantas
