@@ -12,6 +12,16 @@ A collection of my open-source projects. Most are built with Rust and focus on t
 
 ## 🦀 Terminal Tools
 
+### 🐦 Perch
+
+A beautiful terminal client for Mastodon and Bluesky. Cross-post to multiple networks, schedule posts, and enjoy a stunning TUI with 15 themes.
+
+**Features:** Mastodon & Bluesky support, cross-posting, scheduled posts, media attachments, 15 themes
+
+🌐 [Website](https://perch.ricardodantas.me) • 📦 [GitHub](https://github.com/ricardodantas/perch) • 🍺 `brew install ricardodantas/tap/perch`
+
+---
+
 ### 📡 Feedo
 
 A beautiful TUI RSS/Atom feed reader built with Rust. Stay updated with your favorite content sources right from your terminal.
