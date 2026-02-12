@@ -29,4 +29,4 @@ Whenever I get the chance, I like to share some of my open-source projects on [m
 
 Check out my career journey on [LinkedIn](https://www.linkedin.com/in/rdantas).
 
-*If you like my blog posts, consider supporting me on [Buy Me a Coffe](https://buymeacoffee.com/ricardodantas).*
+*If you like my blog posts our my open source apps, consider supporting me on [Buy Me a Coffe](https://buymeacoffee.com/ricardodantas).*
