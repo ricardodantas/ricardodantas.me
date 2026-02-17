@@ -18,7 +18,7 @@ A beautiful color picker with built-in WCAG accessibility contrast checking. Pic
 
 **Features:** Screen color picker, WCAG AA/AAA contrast checking, Hex/RGB/HSB/HSL/LAB/OpenGL formats, cross-platform
 
-🌐 [Website](https://getpikr.app) • 📦 [GitHub](https://github.com/ricardodantas/pikr)
+🌐 [Website](https://getpikr.app)
 
 ---
 
