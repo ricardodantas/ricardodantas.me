@@ -10,6 +10,18 @@ showToc: false
 
 A collection of my open-source projects. Most are built with Rust and focus on terminal-based tools with beautiful TUI interfaces.
 
+## 🖥️ Desktop Apps
+
+### 🎨 Pikr
+
+A beautiful color picker with built-in WCAG accessibility contrast checking. Pick colors from anywhere on screen, check AA/AAA compliance, and export in multiple formats.
+
+**Features:** Screen color picker, WCAG AA/AAA contrast checking, Hex/RGB/HSB/HSL/LAB/OpenGL formats, cross-platform
+
+🌐 [Website](https://getpikr.app) • 📦 [GitHub](https://github.com/ricardodantas/pikr)
+
+---
+
 ## 🦀 Terminal Tools
 
 ### 🐦 Perch
