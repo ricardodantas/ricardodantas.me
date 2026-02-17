@@ -39,7 +39,7 @@ Nothing more than necessary. I've grown to appreciate tools that do one thing we
 
 ## Why Tauri?
 
-After spending time with Rust building [Feedo and Hazelnut](/2026/02/04/building-tui-apps-with-rust/), I wanted to apply what I learned to a desktop app with an actual GUI. [Tauri](https://tauri.app/) was the natural choice—it combines a Rust backend with a web-based frontend, resulting in small, fast, native applications.
+After spending time with Rust building [Feedo and Hazelnut](/posts/building-tui-apps-with-rust/), I wanted to apply what I learned to a desktop app with an actual GUI. [Tauri](https://tauri.app/) was the natural choice—it combines a Rust backend with a web-based frontend, resulting in small, fast, native applications.
 
 The development experience was smooth. Tauri handles the cross-platform complexity (system tray, global shortcuts, native dialogs) while letting me use familiar web technologies for the interface. The final binary is tiny compared to Electron-based alternatives, and it feels snappy.
 
