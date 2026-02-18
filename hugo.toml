@@ -54,10 +54,10 @@ category = "categories"
 tag = "tags"
 series = "series"
 
-[[languages.en.menu.main]]
-name = "Podcast"
-url = "podcast/"
-weight = 2
+# [[languages.en.menu.main]]
+# name = "Podcast"
+# url = "podcast/"
+# weight = 2
 
 [[languages.en.menu.main]]
 name = "Projects"
