@@ -32,6 +32,19 @@ highlightStyle = 'github'
 icon = "images/profile.png"
 iconHeight = 30
 
+[params.podcast]
+title = "Ricardo Dantas Podcast"
+subtitle = "Tech, music, and everything in between"
+author = "Ricardo Dantas"
+email = "me@ricardodantas.me"
+description = "Software developer. Guitar player. Music maker. Talking about tech, life, music and whatever else I'm thinking about."
+language = "en"
+image = "https://ricardodantas.me/apple-touch-icon.png"
+category = "Technology"
+subcategory = "Software How-To"
+explicit = "no"
+type = "episodic"
+
 [languages.en]
 languageName = "English"
 weight = 1
@@ -40,6 +53,11 @@ weight = 1
 category = "categories"
 tag = "tags"
 series = "series"
+
+[[languages.en.menu.main]]
+name = "Podcast"
+url = "podcast/"
+weight = 2
 
 [[languages.en.menu.main]]
 name = "Projects"
@@ -110,6 +128,7 @@ baseName = 'feed'
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+section = ["HTML", "RSS"]
 
 
 [caches]

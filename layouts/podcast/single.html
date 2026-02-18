@@ -1,0 +1,37 @@
+{{ define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">
+      {{- if .Params.episode }}EP {{ .Params.episode }} · {{- end }}
+      {{ .Title }}
+    </h1>
+    <div class="post-meta">
+      {{ .Date.Format "January 2, 2006" }}
+      {{- if .Params.duration }} · 🎧 {{ .Params.duration }}{{ end }}
+    </div>
+  </header>
+
+  {{- if .Params.audio_url }}
+  <div class="podcast-player">
+    <audio controls preload="metadata" style="width:100%; margin: 1.5em 0;">
+      <source src="{{ .Params.audio_url }}" type="{{ .Params.audio_type | default "audio/mpeg" }}">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  {{- end }}
+
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+
+  {{- if .Params.audio_url }}
+  <div class="podcast-download" style="margin-top: 2em; padding: 1em; border-radius: 8px; background: var(--code-bg);">
+    <p><strong>Listen elsewhere:</strong></p>
+    <p>
+      <a href="{{ .Params.audio_url }}" download>⬇️ Download MP3</a>
+      · <a href="{{ "podcast/feed.xml" | absURL }}">📡 RSS Feed</a>
+    </p>
+  </div>
+  {{- end }}
+</article>
+{{ end }}

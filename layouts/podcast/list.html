@@ -1,0 +1,36 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if site.Params.podcast.description }}
+  <p class="post-description">{{ site.Params.podcast.description }}</p>
+  {{- end }}
+  <p class="podcast-subscribe">
+    <a href="{{ "podcast/feed.xml" | absURL }}" target="_blank" rel="noopener">📡 RSS Feed</a>
+  </p>
+</header>
+
+{{- if not .RegularPages }}
+<p style="margin-top: 2em; color: var(--secondary);">No episodes yet. Stay tuned!</p>
+{{- else }}
+{{- range .RegularPages }}
+<article class="post-entry">
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+      {{- if .Params.episode }}<span class="podcast-ep">EP {{ .Params.episode }}</span>{{- end }}
+      {{ .Title }}
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>{{ .Summary | plainify | truncate 200 }}</p>
+  </div>
+  {{- if .Params.duration }}
+  <span class="podcast-meta">🎧 {{ .Params.duration }}</span>
+  {{- end }}
+  <footer class="entry-footer">
+    <span>{{ .Date.Format "January 2, 2006" }}</span>
+  </footer>
+  <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+{{- end }}
+{{ end }}

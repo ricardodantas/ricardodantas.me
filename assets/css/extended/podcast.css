@@ -1,0 +1,22 @@
+.podcast-subscribe {
+    margin-top: 0.5em;
+}
+.podcast-subscribe a {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 6px;
+    background: var(--code-bg);
+    font-size: 0.85em;
+    text-decoration: none;
+}
+.podcast-ep {
+    font-size: 0.75em;
+    font-weight: 600;
+    opacity: 0.6;
+    margin-right: 4px;
+}
+.podcast-meta {
+    font-size: 0.8em;
+    color: var(--secondary);
+    padding: 0 8px;
+}
