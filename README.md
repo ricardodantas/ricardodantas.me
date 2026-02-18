@@ -190,4 +190,4 @@ Pushes to `main` automatically trigger the GitHub Actions workflow which:
 
 ## License
 
-Content © Ricardo Dantas. Code is MIT licensed.
+Content © Ricardo Dantas. Code is GPL-3.0 licensed.
