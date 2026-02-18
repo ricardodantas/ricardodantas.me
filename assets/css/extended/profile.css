@@ -1,0 +1,4 @@
+.logo a img[aria-label="logo"] {
+    border-radius: 50%;
+    margin-right: 8px;
+}

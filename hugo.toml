@@ -28,6 +28,10 @@ ShowRssButtonInSectionTermList = true
 ShowPageNums = true
 highlightStyle = 'github'
 
+[params.label]
+icon = "images/profile.png"
+iconHeight = 30
+
 [languages.en]
 languageName = "English"
 weight = 1
